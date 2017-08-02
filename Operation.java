@@ -4,19 +4,17 @@
  * @局限：只能做到两个数的加减乘除
  * @日期：2017.8.2
  */
-
 package forth;
 import java.util.Scanner;
 public class Operation {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		while(true)
 		{
 			Window window =new Window();
-			window.welcome();
-			Scanner scan=new Scanner(System.in);
+			window.welcome();                        //创建主界面
+			Scanner scan=new Scanner(System.in);     
 			boolean flag_select=true;
-			while(flag_select)
+			while(flag_select)         
 			{			
 				int select=scan.nextInt();		
 				switch (select) 
